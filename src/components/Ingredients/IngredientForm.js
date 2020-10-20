@@ -32,7 +32,7 @@ const IngredientForm = React.memo(props => {
               id="amount"
               value={enteredAmount}
               onChange={event => {
-                setEnteredAmount = event.target.value;
+                setEnteredAmount(event.target.value);
               }} />
           </div>
           <div className="ingredient-form__actions">
