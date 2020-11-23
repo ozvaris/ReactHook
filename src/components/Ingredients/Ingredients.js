@@ -98,7 +98,7 @@ function Ingredients() {
 
   }, []);
 
-  const clearError = () => useCallback( () => {
+  const clearError = useCallback( () => {
     //setError(null);
     dispatchHttp({ type: 'CLEAR' });
   }, []);
